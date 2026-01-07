@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book now</title>
+    <link rel="stylesheet" href="HOME.CSS">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .translucent-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            background-color: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(3px);
+            width: 80%;
+            height: 80%;
+            border-radius: 8px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body style="background-color: rgb(1, 1, 32);">
+       <!-- form -->
+      <!-- inner form  -->
+        <div class="innerform" style="margin-top: 150px;">
+            <div class="navtext">What type of vehicle?</div>
+            <div class="formcar"><div class="cars"><div class="caricon"></div><div style="padding-top: 8px;">Cars</div></div> <div class="Van"><div class="vanicon"></div><div style="padding-top: 8px;">Van & Trucks</div></div></div>
+             <div class="formdatda"><div class="navtext" style="margin-top: 20px;">Pickup and return location</div>
+             <div style="display: flex; flex-direction: row;">
+             <div class="formcar" > <div class="time-box" style="width: 50px;font-size:18px;">📍</div><input type="text" placeholder="City,address,point of interest" class="location" ></div>
+             <div class="wrapper">
+
+    <div class="field">
+        <div class="input-group active">
+            <div class="date-box">
+                <span class="icon">📅</span>
+                <input type="date">
+            </div>
+            <div class="time-box">Time</div>
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="input-group">
+            <div class="date-box">
+                <span class="icon">📅</span>
+                <input type="date">
+            </div>
+            <div class="time-box">Time</div>
+        </div>
+    </div>
+
+</div>
+
+   </div>
+
+
+   <div class="top-bar">
+
+    <!-- Age -->
+    <div class="select-box">
+        <label>I am</label>
+        <select>
+            <option>18-25</option>
+            <option selected>26+</option>
+            <option>60+</option>
+        </select>
+    </div>
+
+    <!-- Country -->
+    <div class="select-box">
+        <label>I live in</label>
+        <select>
+            <option selected>Pakistan</option>
+            <option>India</option>
+            <option>UAE</option>
+            <option>UK</option>
+        </select>
+    </div>
+
+    <!-- Checkbox -->
+    <div class="checkbox-area">
+        <input type="checkbox" id="rate">
+        <label for="rate">I have a <strong>negotiated rate</strong></label>
+        <span class="info">ⓘ</span>
+    </div>
+
+    <!-- Button -->
+    <button class="search-btn">Search</button>
+
+</div>
+
+
+         </div>
+        </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- Left Section -->
+            <div class="footer-left">
+                <h2>Ready to Rent a Car in Lahore?</h2>
+                <p>
+                    Don't let transportation worries slow you down. Whether you want a quick ride across town,
+                    a peaceful trip to Islamabad, or a glamorous limo for your big day, Borrow the Road is here for you.
+                </p>
+
+                <div class="service-areas">
+                    <h3>WE SERVE ALL MAJOR AREAS:</h3>
+                    <div class="areas-grid">
+                        <div class="area-badge">Gulberg</div>
+                        <div class="area-badge">DHA</div>
+                        <div class="area-badge">Johar Town</div>
+                        <div class="area-badge">Model Town</div>
+                        <div class="area-badge">Township</div>
+                        <div class="area-badge">Faisal Town</div>
+                        <div class="area-badge">Pak Arab</div>
+                        <div class="area-badge">Bahria Town</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="footer-right">
+                <button class="action-btn">
+                    <div class="btn-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="btn-content">
+                        <h3>Email Now</h3>
+                        <p>contact@carrental.pk</p>
+                    </div>
+                </button>
+
+                <button class="action-btn">
+                    <div class="btn-icon"><i class="fas fa-phone"></i></div>
+                    <div class="btn-content">
+                        <h3>Call Now</h3>
+                        <p>+92 300 1234567</p>
+                    </div>
+                </button>
+
+                <div class="trust-badge">
+                    <div class="trust-icon"><i class="fas fa-shield-alt"></i></div>
+                    <p>Trusted by 500+ Happy Customers</p>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom CTA -->
+        <div class="footer-bottom">
+        </div>
+    </footer>
+</body>
+</html>

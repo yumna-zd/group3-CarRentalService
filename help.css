@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* VIDEO */
+.hero video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* HERO TEXT (MARIN MARTIN STYLE) */
+.hero-text {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+      padding-left: 2%;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: clamp(80px, 10vw, 150px);
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: 2px;
+        margin-top: 300px;
+    text-transform: uppercase;
+}
+
+.hero-text p {
+    margin-top: 20px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #94B4C1;
+}
+
+/* CONTENT */
+.content {
+    padding: 80px 10%;
+}
+
+/* INFO SECTIONS */
+.info-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.info-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 1;
+}
+
+.text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.text h2::after {
+    content: "";
+    width: 60px;
+    height: 3px;
+   background-color: white;
+    display: block;
+    margin-top: 8px;
+}
+
+.text p,
+.text li {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.text ul {
+    padding-left: 20px;
+}
+
+/* IMAGES */
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transition: transform 0.4s ease;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .info-section,
+    .info-section.reverse {
+        flex-direction: column;
+    }
+
+    .hero-text h1 {
+        font-size: 60px;
+    }
+}

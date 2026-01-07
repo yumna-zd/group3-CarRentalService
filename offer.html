@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Rental | Northern Areas Trip</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="offer .css">
+    <link rel="stylesheet" href="footer.css">
+
+    <style>
+        /* General fix for dropdowns */
+        .select-box {
+            position: relative;
+            width: 100%;
+            margin-bottom: 15px;
+            z-index: 1000;
+        }
+
+        .select-box select {
+            width: 100%;
+            padding: 10px 12px;
+            font-size: 14px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            cursor: pointer;
+            pointer-events: auto;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+    </style>
+</head>
+
+<body style="background-color: #020617;">
+
+<header class="header">
+    <div class="LOGO"></div>
+    <div class="eye"></div>
+    <div class="help"></div>
+    <div class="menu"></div>
+    <div class="login"></div>
+</header>
+
+<section class="blast">
+    <video autoplay muted loop playsinline>
+        <source src="north2.mp4" type="video/mp4">
+    </video>
+    <div class="dark-layer"></div>
+
+    <div class="glass-card">
+        <span class="badge">LIMITED TIME OFFER</span>
+        <h1>
+            <span class="upto">UP TO</span><br>
+            <span class="percent">70%</span><br>
+            <span class="off">OFF</span>
+        </h1>
+        <h2>Trip to Northern Areas</h2>
+        <p>Luxury cars • Scenic routes • Stress-free travel</p>
+        <button class="cta">Book Now 🚗</button>
+    </div>
+</section>
+
+<!-- ================= SEARCH FORM ================= -->
+<div class="form">
+    <div class="innerform">
+
+        <!-- Locations -->
+        <div class="top-bar">
+            <div class="field">
+                <label>Pick-up Location</label>
+                <div class="input-group location">
+                    <div class="date-box">
+                        <input type="text" placeholder="Enter city or airport">
+                    </div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label>Drop-off Location</label>
+                <div class="input-group location">
+                    <div class="date-box">
+                        <input type="text" placeholder="Same as pick-up">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dates -->
+        <div class="wrapper">
+            <div class="field">
+                <label>Pick-up Date</label>
+                <div class="input-group">
+                    <div class="date-box">📅 <input type="date"></div>
+                    <div class="time-box">10:00</div>
+                </div>
+            </div>
+
+            <div class="field">
+                <label>Drop-off Date</label>
+                <div class="input-group">
+                    <div class="date-box">📅 <input type="date"></div>
+                    <div class="time-box">10:00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vehicle Type Dropdown -->
+        <div class="field">
+            <label>Vehicle Type</label>
+            <div class="select-box">
+                <select name="vehicle" required>
+                    <option value="" disabled selected>Select vehicle</option>
+                    <option value="economy">Economy Car</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="luxury">Luxury Car</option>
+                    <option value="van">Van</option>
+                    <option value="truck">Truck</option>
+                    <option value="jeep">4x4 Jeep</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Country Dropdown -->
+        <div class="field">
+            <label>Country</label>
+            <div class="select-box">
+                <select name="country" required>
+                    <option value="pakistan" selected>Pakistan</option>
+                    <option value="india">India</option>
+                    <option value="uae">UAE</option>
+                    <option value="uk">UK</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Age Checkbox -->
+        <div class="checkbox-area">
+            <input type="checkbox" id="age">
+            <label for="age">Driver aged 25–70</label>
+        </div>
+
+        <!-- Search Button -->
+        <button class="search-btn">Search</button>
+
+    </div>
+</div>
+
+<!-- ================= TEXT SECTION ================= -->
+<section class="text-area">
+    <h2>Why Choose This Trip?</h2>
+    <p>
+        Experience the breathtaking beauty of Northern Areas with our premium
+        car rental service. Enjoy comfort, safety, and unforgettable journeys
+        with massive savings.
+    </p>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="gallery">
+    <h2>Explore the Journey</h2>
+    <div class="images">
+        <img src="road.jpg"  alt="Mountain road">
+        <img src="nothern view.jpg" alt="Northern area view">
+        <img src= "luxurycar.jpg"    alt="Luxury car rental">
+    </div>
+</section>
+
+<!-- Footer -->
+    <footer>
+        <div class="footer-container">
+
+            <!-- Left Section -->
+            <div class="footer-left">
+                <h2>Ready to Rent a Car in Lahore?</h2>
+                <p>
+                    Don't let transportation worries slow you down. Whether you want a quick ride across town,
+                    a peaceful trip to Islamabad, or a glamorous limo for your big day, Borrow the Road is here for you.
+                </p>
+
+                <div class="service-areas">
+                    <h3>WE SERVE ALL MAJOR AREAS:</h3>
+                    <div class="areas-grid">
+                        <div class="area-badge">Gulberg</div>
+                        <div class="area-badge">DHA</div>
+                        <div class="area-badge">Johar Town</div>
+                        <div class="area-badge">Model Town</div>
+                        <div class="area-badge">Township</div>
+                        <div class="area-badge">Faisal Town</div>
+                        <div class="area-badge">Pak Arab</div>
+                        <div class="area-badge">Bahria Town</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="footer-right">
+                <button class="action-btn">
+                    <div class="btn-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="btn-content">
+                        <h3>Email Now</h3>
+                        <p>contact@carrental.pk</p>
+                    </div>
+                </button>
+
+                <button class="action-btn">
+                    <div class="btn-icon"><i class="fas fa-phone"></i></div>
+                    <div class="btn-content">
+                        <h3>Call Now</h3>
+                        <p>+92 300 1234567</p>
+                    </div>
+                </button>
+
+                <div class="trust-badge">
+                    <div class="trust-icon"><i class="fas fa-shield-alt"></i></div>
+                    <p>Trusted by 500+ Happy Customers</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom CTA -->
+        <div class="footer-bottom">
+        </div>
+    </footer>
+
+</body>
+</html>
