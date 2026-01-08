@@ -16,6 +16,6 @@ A car rental services website built with HTML and CSS, designed to provide users
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/[username]/[groupname-projectname].git
+   git clone https://github.com/yumna-zd/group3-CarRentalService.git
    ```
 2. Open `index.html` in your web browser to view the website locally
